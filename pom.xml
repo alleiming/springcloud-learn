@@ -24,6 +24,17 @@
         <module>hello-service-feign-consumer</module>
         <module>hystrix-dashboard</module>
         <module>config-server</module>
+        <module>config-client</module>
+        <module>test-rabbitmq</module>
+        <module>trace-a</module>
+        <module>trace-b</module>
+        <module>trace-c</module>
+        <module>zipkin-server</module>
+        <module>stream-provider</module>
+        <module>stream-consumer</module>
+        <module>api-gateway</module>
+        <module>turbine</module>
+        <module>turbine-amqp</module>
     </modules>
 
     <dependencyManagement>

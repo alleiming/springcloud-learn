@@ -42,11 +42,6 @@ public class HelloController {
 
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
     public String hello() {
-        //List<String> serviceList = client.getServices();
-        //logger.info(serviceList.toString());
-        //ServiceInstance instance = client.getLocalServiceInstance();
-        //logger.info("host:" + instance.getHost() + ", service_id:" + instance.getServiceId());
-
         try {
             TimeUnit.SECONDS.sleep(RandomUtils.nextInt(3));
         } catch (InterruptedException e) {

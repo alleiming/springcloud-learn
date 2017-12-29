@@ -9,7 +9,7 @@ import com.allei.dto.User;
 /**
  * Created by alleiming on 2017/11/20.
  */
-@RequestMapping("/feign")
+@RequestMapping("/hello-service")
 public interface HelloService {
 
     @RequestMapping(value = "/hello", method = RequestMethod.POST)

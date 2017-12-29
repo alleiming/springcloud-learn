@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.allei.consumer.service.HelloService;
+import com.allei.consumer.service.FeignHelloService;
 import com.allei.dto.User;
 
 /**
@@ -14,12 +14,12 @@ import com.allei.dto.User;
 @RequestMapping("/feign")
 @RestController
 public class ConsumerController {
-
-//    @Autowired
-//    FeignHelloService feignHelloService;
+    //
+    //    @Autowired
+    //    LocalHelloService helloService;
 
     @Resource
-    private HelloService helloService;
+    private FeignHelloService helloService;
 
     @RequestMapping(value = "/helloUser", method = RequestMethod.GET)
     public String helloUser() {
